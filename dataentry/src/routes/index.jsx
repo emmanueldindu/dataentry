@@ -15,6 +15,7 @@ import TeamPage from "../pages/team/Team"
 import { createBrowserRouter } from "react-router-dom"
 import AddUser from "../pages/user/AddUser"
 import UserList from "../pages/user/UserList"
+import HouseList from "../pages/user/HouseList"
 export const AppRoutes = createBrowserRouter([
 	{
 		path: "/",
@@ -83,6 +84,11 @@ export const AppRoutes = createBrowserRouter([
 	{
 		path: "/userlist",
 		element: <UserList />
+	},
+
+	{
+		path: "/houselist",
+		element: <HouseList />
 	},
 
 ])

@@ -31,6 +31,19 @@ export default function Sidebar() {
 							<UsersIcon width={24} height={24} className="mr-2" /> <span>My Team</span>
 						</Link>
 					</li>
+
+
+					<li className="">
+						<Link to={"/userlist"} className="text-slate-300 p-2 py-4 rounded-s-3xl w-full flex items-center hover:text-blue hover:bg-slate-100 active:text-blue active:bg-slate-100">
+							<UsersIcon width={24} height={24} className="mr-2" /> <span>User Management</span>
+						</Link>
+					</li>
+
+					<li className="">
+						<Link to={"/houselist"} className="text-slate-300 p-2 py-4 rounded-s-3xl w-full flex items-center hover:text-blue hover:bg-slate-100 active:text-blue active:bg-slate-100">
+							<UsersIcon width={24} height={24} className="mr-2" /> <span>House Management</span>
+						</Link>
+					</li>
 				</ul>
 
 				<ul className="flex flex-col gap-2">

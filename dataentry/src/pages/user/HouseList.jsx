@@ -2,12 +2,12 @@ import React from 'react'
 import Layout from "../../components/layout/Layout"
 
 
-const UserList = () => {
+const HouseList = () => {
     return (
         <Layout>
             
     <div className="p-3 my-8 overflow-hidden">
-    <h2 className="font-bold text-2xl">User List</h2>
+    <h2 className="font-bold text-2xl">House List</h2>
     <p className="text-slate-500 font-normal">Here is a list of users</p>
           <div className="overflow-x-auto">
           <table className="min-w-full text-center text-sm font-light mt-8 overflow-x-auto table-auto">
@@ -97,4 +97,4 @@ const UserList = () => {
   )
 }
 
-export default UserList
+export default HouseList
