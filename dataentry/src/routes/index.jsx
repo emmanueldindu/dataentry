@@ -16,6 +16,7 @@ import { createBrowserRouter } from "react-router-dom"
 import AddUser from "../pages/user/AddUser"
 import UserList from "../pages/user/UserList"
 import HouseList from "../pages/user/HouseList"
+import AddHouse from "../pages/user/AddHouse"
 export const AppRoutes = createBrowserRouter([
 	{
 		path: "/",
@@ -89,6 +90,11 @@ export const AppRoutes = createBrowserRouter([
 	{
 		path: "/houselist",
 		element: <HouseList />
+	},
+
+	{
+		path: "/addhouse",
+		element: <AddHouse/>
 	},
 
 ])

@@ -4,7 +4,7 @@ import React from "react"
 import Sidebar from "./Sidebar"
 import NavHeader from "./NavHeader"
 
-export default function Layout({ children }) {
+export default function Layout({ children, navigateToAddUser }) {
 	return (
 		<section className="oti_dash-wrapper fixed w-full top-0 bottom-0 right-0 left-0 bg-blue pt-3 scroll-smooth overflow-auto">
 			<div className="grid grid-cols-5 w-full h-screen">
@@ -14,7 +14,7 @@ export default function Layout({ children }) {
 				{/* Last col */}
 				<div className="oti_content-container  right-0 left-auto bg-slate-100 p-3 h-full w-full  text-slate-900 md:fixed md:w-[83%] md:rounded-tl-[1.5rem] md:col-span-4 xs:col-span-5">
 					{/* Nav header */}
-					<NavHeader />
+					{/* <NavHeader navigateToAddUser={ navigateToAddUser} /> */}
 
 					{/* Layout contents */}
 					{children}

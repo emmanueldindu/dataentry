@@ -1,8 +1,9 @@
 import React from "react"
 import { Bars3Icon, CloudArrowDownIcon, MapPinIcon, PlusIcon } from "@heroicons/react/24/solid"
 import { Link } from "react-router-dom"
+import AddButton from "./AddButton"
 
-export default function NavHeader() {
+export default function NavHeader({navigateToAddUser, navigateToAddData, navigateToAddHouse}) {
 	return (
 		<div className="flex gap-8 w-full md:justify-between md:items-center md:flex-row xs:flex-col">
 			<div className="flex items-center gap-8">
@@ -18,11 +19,12 @@ export default function NavHeader() {
 					<CloudArrowDownIcon width={24} height={24} /> Export Report
 				</button>
 
-				<button className="rounded-1xl text-sm bg-blue text-slate-200 focus:outline-none" type="button">
-					<Link to={"/data-collection"} className="flex items-center gap-3 text-slate-100 hover:text-slate-100">
-						<PlusIcon width={24} height={24} /> Add New Data
-					</Link>
-				</button>
+				<AddButton onClick={navigateToAddUser || navigateToAddHouse || navigateToAddData}
+				buttonText={navigateToAddUser ? 'Add New User' : (navigateToAddHouse ? 'Add New House' : 'Add New Data')}
+				/>				  
+       
+
+
 			</div>
 		</div>
 	)

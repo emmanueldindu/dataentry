@@ -1,10 +1,23 @@
 import React from 'react'
 import Layout from "../../components/layout/Layout"
+import { useNavigate } from 'react-router-dom';
+import NavHeader from '../../components/layout/NavHeader';
 
 
 const UserList = () => {
+
+    const navigate = useNavigate();
+
+    const handleNavigateToAddUser = () => {
+      navigate('/adduser'); // Replace '/adduser' with the actual path to your Add User page
+    };
+
+
     return (
         <Layout>
+        <NavHeader isAddUser navigateToAddUser={handleNavigateToAddUser} />
+        
+
             
     <div className="p-3 my-8 overflow-hidden">
     <h2 className="font-bold text-2xl">User List</h2>
