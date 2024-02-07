@@ -18,6 +18,9 @@ import UserList from "../pages/user/UserList"
 import HouseList from "../pages/house/HouseList"
 import AddHouse from "../pages/house/AddHouse"
 import HouseDetails from "../pages/house/HouseDetails"
+import SanitationList from "../pages/house/SanitationList"
+import AddSanitation from "../pages/house/AddSanitation"
+import ViewSanitation from "../pages/house/ViewSanitation"
 export const AppRoutes = createBrowserRouter([
 	{
 		path: "/",
@@ -103,4 +106,17 @@ export const AppRoutes = createBrowserRouter([
 		element: <HouseDetails/>
 	},
 
+	{
+		path: "/sanitationlist",
+		element: <SanitationList/>
+	},
+	{
+		path: "/addsanitation",
+		element: <AddSanitation/>
+	},
+
+	{
+		path: "/viewsanitation",
+		element: <ViewSanitation/>
+	},
 ])

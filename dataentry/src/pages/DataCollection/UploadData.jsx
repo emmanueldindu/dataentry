@@ -9,7 +9,7 @@ export default function UploadDataPage() {
 	const handleGoBack = () => {
         navigate(-1); // Navigates back one step in the history
       };
-	  const fileRef = useRef<HTMLInputElement>(null);
+	  const fileRef = useRef(null);
 
 	  const handleUpload = () => {
 		if (fileRef.current) {

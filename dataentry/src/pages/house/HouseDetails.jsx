@@ -38,7 +38,7 @@ const HouseDetails = () => {
         <button className="bg-blue text-slate-100 px-3 py-1 rounded-md">Add Person</button>
                     </Link>
                     
-                    <Link to="/housedetails">
+                    <Link to="/sanitationlist">
         <button className="bg-blue text-slate-100 px-3 py-1 rounded-md">Sanitation</button>
       </Link>
                 </div>
