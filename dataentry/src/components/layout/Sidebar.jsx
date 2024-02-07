@@ -7,12 +7,12 @@ import UserImg from '../../assets/img/user.png'
 
 export default function Sidebar() {
 	return (
-		<div className="oti_sidebar h-full relative col-span-1 md:block xs:hidden">
+		<div className="oti_sidebar h-full relative col-span-1 md:block xs:hidden  ">
 			<h3 className="flex flex-row items-center font-bold text-slate-200 text-lg p-3">
 				<AdjustmentsHorizontalIcon width={24} height={24} className="mr-3 text-slate-400" /> Data Collection
 			</h3>
 
-			<div className="mt-10 pl-3 flex flex-col justify-between h-full overflow-y-scroll relative">
+			<div className="mt-10 pl-3 flex flex-col justify-between h-full overflow-y-auto relative">
 				<ul className="flex flex-col gap-4">
 					<li className="">
 						<Link to={"/dashboard"} className="text-slate-300 p-2 py-4 rounded-s-3xl w-full flex items-center hover:text-blue hover:bg-slate-100 active:text-blue active:bg-slate-100">

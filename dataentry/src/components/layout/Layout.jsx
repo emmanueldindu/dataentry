@@ -12,7 +12,7 @@ export default function Layout({ children, navigateToAddUser }) {
 				<Sidebar />
 
 				{/* Last col */}
-				<div className="oti_content-container  right-0 left-auto bg-slate-100 p-3 h-full w-full  text-slate-900 md:fixed md:w-[83%] md:rounded-tl-[1.5rem] md:col-span-4 xs:col-span-5">
+				<div className="oti_content-container  right-0 left-auto bg-slate-100 p-3 h-full w-full  text-slate-900 md:fixed md:w-[80%] mx-auto items-start overflow-y-auto justify-center md:rounded-tl-[1.5rem] md:col-span-4 xs:col-span-5">
 					{/* Nav header */}
 					{/* <NavHeader navigateToAddUser={ navigateToAddUser} /> */}
 
