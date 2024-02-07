@@ -4,18 +4,21 @@ import Layout from "../../components/layout/Layout"
 import DataCollection from "./DataCollection"
 import NavHeader from "../../components/layout/NavHeader"
 import { useNavigate } from "react-router-dom"
+import DashboardNav from "./DashboardNav"
 
 export default function Dashboard() {
 
 	const navigate = useNavigate();
 
     const handleNavigateToAddData = () => {
-      navigate('/data-collection'); // Replace '/adduser' with the actual path to your Add User page
+		navigate('/data-collection'); 
+		
     };
 
 	return (
 		<Layout>
-			<NavHeader  isAddUser={false} navigateToAddData={handleNavigateToAddData} />
+			{/* <NavHeader    /> */}
+			<DashboardNav />
 			<Cards />
 
 			<DataCollection />

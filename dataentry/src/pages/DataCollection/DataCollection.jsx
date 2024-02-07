@@ -67,7 +67,7 @@ const [selectedLGA, setSelectedLGA] = useState('');
 								</div>
 								<div className="">
 									<label htmlFor="employeeStatus" className="mb-3 block">
-										Last Name *
+										Last Name * 
 									</label>
 									
 									<input required className="p-3 rounded bg-slate-200 block w-full"  type="text" name="lastname"/>

@@ -5,9 +5,6 @@ import { PlusIcon } from '@heroicons/react/24/solid';
 const AddButton = ({  onClick, buttonText }) => {
 
 
-
-
-    
     return (
         <button
         className="rounded-1xl text-sm bg-blue text-slate-200 focus:outline-none"
@@ -19,7 +16,10 @@ const AddButton = ({  onClick, buttonText }) => {
           <PlusIcon width={24} height={24} /> {buttonText}
         </Link>
       </button>
-  );
+    );
+    
+
 };
+
 
 export default AddButton;

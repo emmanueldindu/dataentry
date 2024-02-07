@@ -161,19 +161,7 @@ const AddUser = () => {
                   </head>
 
                   <div className="grid lg:grid-cols-2 xs:grid-cols-1 gap-4">
-                    {/* <div className="">
-									<label className="mb-3 block">Highest Educational Qualification*</label>
-									<select required className="p-3 rounded bg-slate-300 block w-full">
-										<optgroup>
-											<option value={"father"}>Primary School </option>
-											<option value={"mother"}>Secondary School</option>
-
-											<option value={"brother"}>Tetiary</option>
-
-										</optgroup>
-									</select>
-								</div> */}
-
+              
                     <div className="">
                       <label className="mb-3 block">State </label>
                       <input
